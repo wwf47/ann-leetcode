@@ -15,6 +15,8 @@ return [0, 1].
 ## Code
 
 - Support Language: Python
+
+```
 class Solution(object):
     def twoSum(self, nums, target):
         """
