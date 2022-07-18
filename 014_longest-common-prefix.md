@@ -25,16 +25,19 @@ class Solution(object):
         """
         res = ""
         mid = strs[0]
-        
-        for i in range(1, len(strs)):
-            while mid not in strs[i]:
-                mid = mid[:-1]
 
-        for i in range(1, len(strs)):
-            for j in range(len(mid)):
-                if mid[j]!=strs[i][j]:
-                    mid = mid[:j]
+        for i in range(len(mid)):
+            l = 0 
+            for j in range(1, len(strs)):
+                if i>len(strs[j])-1:
+                    l = 1
                     break
-        res = mid 
+                elif mid[i]!=strs[j][i]:
+                    l = 1
+                    break
+            if l == 0:
+                res += mid[i]
+            else:
+                break
         return res
 ```
