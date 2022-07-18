@@ -6,7 +6,6 @@ https://leetcode.cn/problems/integer-to-roman
 ```
 Roman numerals are represented by seven different symbols: I, V, X, L, C, D and M.
 
-Example:
 Symbol       Value
 I             1
 V             5
@@ -16,6 +15,7 @@ C             100
 D             500
 M             1000
 
+Example:
 Input: num = 3
 Output: "III"
 Explanation: 3 is represented as 3 ones.
