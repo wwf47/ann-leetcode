@@ -17,6 +17,7 @@ Output: true
 ## Code
 
 - Support Language: Python
+- stack
 
 ```
 class Solution(object):
@@ -42,3 +43,20 @@ class Solution(object):
         else:
             return False
 ```
+- replace string
+```
+class Solution(object):
+    def isValid(self, s):
+        """
+        :type s: str
+        :rtype: bool
+        """
+        while True:
+            l = len(s)
+            s = s.replace("()","").replace("[]","").replace("{}","")
+            if len(s)==l:
+                break
+        return len(s)==0
+             
+```
+
