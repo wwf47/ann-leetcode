@@ -29,7 +29,7 @@ class Solution(object):
         :rtype: ListNode
         """
         if not head:
-            return []
+            return None
         l = head
         m = head
         lens = 0
